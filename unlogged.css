@@ -1,0 +1,115 @@
+
+/* 
+ Colores:
+ 	
+    A31E39
+    485C5A
+    8C9C9A
+    9DB2B1
+    BFCFCC
+    D6E4E1
+
+
+ */
+
+body {
+    margin:0;
+
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+ }
+
+
+
+#header {
+
+	width:100%; 
+	height:50px; 
+	background-color:#D6E4E1; 
+	border-bottom: 1px solid #9DB2B1;
+
+}
+
+#header_center{
+
+	margin:auto;
+	padding-top:5px;
+	/*background-color:grey;*/
+	text-align:left;
+	width:700px;
+	
+}
+
+#content {
+	
+	width: 700px;
+    height: 350px;
+
+	margin: auto;
+	margin-top:50px;
+
+    vertical-align: middle;
+
+}
+
+#content h2 {
+	font-family: Berlin, sans-serif;
+	font-size:14px;
+	color: #485C5A;
+}
+
+#content h1 {
+	font-family: Rockwell, serif;
+	font-size:40px;
+	color: #000000;
+}
+
+#content_info {
+    float: left;
+    width: 400px;
+}
+
+#content_login {
+    float:left;
+    width: 250px;
+    border: 1px solid #9DB2B1;
+    /*background-color: #D6E4E1;*/
+}
+
+#footer {
+	width: 100%;
+	height: auto;
+	margin-top:50px;
+	min-height:30px;
+	
+	border-top: 1px solid black;
+	background-color: #485C5A;
+	
+	color: #D6E4E1;
+	/*font-family: Berlin, sans-serif;*/
+	font-size: 12px;
+
+}
+
+#footer_center {
+	width:700px;
+	margin:auto;
+	
+	padding-top:2px;
+	text-align:center;
+}
+
+/* Decoracion formulario */
+
+
+
+
+@font-face {
+	font-family: Rockwell;
+	src: url('Rockwell.ttf');
+}
+
+@font-face {
+	font-family: Berlin;
+	src: url('BRLNSR.TTF');
+}

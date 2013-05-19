@@ -1,0 +1,36 @@
+*
+{
+margin:0;
+}
+
+html
+{
+overflow: auto;
+}
+
+body
+{
+background-color:#eee;
+}
+
+h1
+{
+font-size:bold;
+font-family:Verdana,Sans-Serif;
+font-size:1.4em;
+}
+
+h3
+{
+font-size:bold;
+font-family:Verdana,Sans-Serif;
+font-size:1.1em;
+}
+
+p, span
+{
+font-family:Arial,Sans-Serif;
+font-size:0.8em;
+text-align:justify;
+padding:6px 0px;
+}

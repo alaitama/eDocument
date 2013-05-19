@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>eDocument</title>
+
+
+<link rel="stylesheet" type="text/css" href="reset.css">
+<link rel="stylesheet" type="text/css" href="unlogged.css">
+<link rel="stylesheet" type="text/css" href="stylized.css">
+
+<script language="javascript">
+
+function resize() {
+  var D = document;
+  var height = D.getElementById('header').offsetHeight + D.getElementById('content').offsetHeight
+  var docHeight = getDocHeight();
+  var footHeight = docHeight - height;
+  //window.alert(footHeight + "=" + docHeight + "-" + height);
+
+  footHeight = footHeight-101;
+
+  D.getElementById('footer').style.height = footHeight + 'px';
+};
+
+function getDocHeight() {
+    var D = document;
+    //return Math.max(
+        //Math.max(D.body.scrollHeight, D.documentElement.scrollHeight),
+        //Math.max(D.body.offsetHeight, D.documentElement.offsetHeight),
+        //Math.max(D.body.clientHeight, D.documentElement.clientHeight)
+        //);
+        //    return window.innerHeight;
+        return window.innerHeight;
+}
+
+
+</script>
+
+</head>
+
+<body onload="resize()" onresize="resize()">
+
+<div id="header">
+    <div id="header_center">    
+		<img src="logo1.png" onmouseover="this.src='logo2.png'" onmouseout="this.src='logo1.png'">
+	</div>
+</div>
+
+<div id="content">
+    <div id="content_info">
+    	<h1>Guarde sus documentos y acceda cuando y donde los necesite.</h1>
+	    <h2>De forma rápida y segura.</h2>
+    </div>
+    <div id="content_login">
+        <form id="stylized">
+            <label>Nombre</label> <input type="text" id="user">
+            <label>Password</label> <input type="password" id="password"><br>
+            <input type="submit" text="Login" class="gradient-bg">
+        </form>
+    </div>
+</div>
+
+<div id="footer">
+	<div id="footer_center">
+		Esto es una página de prueba. Dominio registrado edocument.es
+	</div>
+</div>
+
+</body>
+
+</html>
+
